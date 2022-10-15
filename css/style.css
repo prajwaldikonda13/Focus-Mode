@@ -1,0 +1,15 @@
+ .overlay-top, .overlay-bottom {
+        position: fixed;
+        width: 100%;
+        background-color: black;
+        opacity: 0.5;
+        z-index: 999999;
+    }
+
+    .overlay-top {
+        top: 0;
+    }
+
+    .overlay-bottom {
+        bottom: 0;
+    }

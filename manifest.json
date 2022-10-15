@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "Focus mode by Prajwal",
+    "description": "This extension focuses on rectangular part where the mouse pointer move.",
+    "version": "1.0",
+    "browser_action": {
+        "default_icon": "favicon.png",
+        "default_popup": "popup.html",
+        "default_title": "Focus mode by Prajwal"
+    },
+    "content_scripts": [
+        {
+            "matches": [ "<all_urls>" ],
+            "all_frames": true,
+            "js": [ "scripts/content.js", "scripts/jquery.min.js" ],
+            "css": [ "css/style.css" ]
+        }
+    ],
+    "permissions": [
+        "activeTab"
+    ]
+}
+
